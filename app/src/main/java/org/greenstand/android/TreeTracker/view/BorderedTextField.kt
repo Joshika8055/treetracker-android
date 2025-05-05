@@ -60,7 +60,8 @@ fun BorderedTextField(
                 RoundedCornerShape(16.dp)
             )
             .padding(4.dp) // Optional: slight inner padding for visual spacing
-    ) {
+    )
+    {
         TextField(
             modifier = Modifier
                 .fillMaxWidth()
