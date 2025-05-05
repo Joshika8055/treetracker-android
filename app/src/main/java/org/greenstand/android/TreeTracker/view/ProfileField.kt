@@ -23,9 +23,10 @@ fun ProfileField(
         Text(label, style = CustomTheme.typography.medium, color = CustomTheme.textColors.lightText)
         if (editable) {
             BorderedTextField(
-                padding = PaddingValues(top = 8.dp, ),
+                modifier = Modifier.fillMaxWidth(),
+                padding = PaddingValues(top = 8.dp),
                 value = value,
-                onValueChange = onValueChange,
+                onValueChange = onValueChange
             )
         } else {
             Text(value, style = CustomTheme.typography.large)
